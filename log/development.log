@@ -13710,3 +13710,254 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 158ms (Views: 145.5ms | ActiveRecord: 2.4ms)
 
 
+Started GET "/posts/new" for 127.0.0.1 at 2016-11-23 14:55:50 +0000
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/new.html.erb within layouts/application (6.2ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 226ms (Views: 216.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-11-23 14:55:54 +0000
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (3.2ms)
+  Rendered posts/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 148ms (Views: 142.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-11-23 14:56:02 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"83Yr2BrnFvruzdhVsUz9k9t2Z82gVS85hOhwiQ8qCQvIl43RQYQ/vj5jsxpzQPYzLBIg5aE6io2SgVNwcBkGmA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 14:56:02 +0000
+Processing by StaticController#homepage as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-23 14:56:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered shared/_nav.html.erb (5.5ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `type' for nil:NilClass):
+    15:   <li class="dropdown pull-right">
+    16:     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Account<strong class="caret"></strong></a>
+    17:   <ul class="dropdown-menu">
+    18:     <% if current_user.type == 'AdminUser' %>
+    19:       <li>
+    20:         <%= link_to "Admin Dashboard", root_path %>
+    21:       </li>
+  
+app/views/shared/_nav.html.erb:18:in `_app_views_shared__nav_html_erb___2218589686591305069_70264019189160'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___2497429155431370449_70264035736540'
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.4ms)
+Started GET "/" for 127.0.0.1 at 2016-11-23 14:56:14 +0000
+Processing by StaticController#homepage as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-23 14:56:14 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+  Rendered shared/_nav.html.erb (6.4ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `type' for nil:NilClass):
+    15:   <li class="dropdown pull-right">
+    16:     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Account<strong class="caret"></strong></a>
+    17:   <ul class="dropdown-menu">
+    18:     <% if current_user.type == 'AdminUser' %>
+    19:       <li>
+    20:         <%= link_to "Admin Dashboard", root_path %>
+    21:       </li>
+  
+app/views/shared/_nav.html.erb:18:in `_app_views_shared__nav_html_erb___2218589686591305069_70264042133880'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___2497429155431370449_70264035415000'
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.6ms)
+Started GET "/" for 127.0.0.1 at 2016-11-23 14:57:08 +0000
+Processing by StaticController#homepage as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-23 14:57:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 143ms (Views: 140.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-11-23 14:57:15 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PF1YIhkZjMm37Dvoq3/D9iFT0lOOciSoTsULDm5oTeYcrB1YynReKryLH3qR5j3F2vC48kL304whXg3IXPqHjQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2016-11-23 14:57:15 UTC], ["sign_in_count", 2], ["updated_at", 2016-11-23 14:57:15 UTC], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 197ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 14:57:15 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/homepage.html.erb within layouts/application (0.7ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 112ms (Views: 107.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-11-23 14:57:21 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"caskztgnnpIouM2yvOazgw0mHq0+tDjgaMflDd9X31m+IfNsr17H0YgYIHiZCf/F7YxPhBC5LBJ6rUYPA8SyXA=="}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 14:57:21 +0000
+Processing by StaticController#homepage as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-11-23 14:57:21 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 132ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-11-23 14:57:29 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4i7kN16ebrMaLkGMxCYNa4kGgUKN9Q3IhJyX+ha3qWwOtG2jx8LMAvRG4n5n+oMaMlKz0vmaGPIhQT6sSJAulQ==", "user"=>{"email"=>"admin@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2016-11-23 14:57:30 UTC], ["sign_in_count", 2], ["updated_at", 2016-11-23 14:57:30 UTC], ["id", 2]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 211ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 14:57:30 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/homepage.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 106ms (Views: 102.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 14:57:33 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/homepage.html.erb within layouts/application (0.7ms)
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 126ms (Views: 121.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 15:01:23 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/homepage.html.erb within layouts/application (0.4ms)
+  Rendered shared/_nav.html.erb (2.0ms)
+Completed 200 OK in 112ms (Views: 108.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-23 15:01:29 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (14.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (3.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (64.7ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (133.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (35.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (3.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (139.7ms)
+Completed 200 OK in 493ms (Views: 424.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-23 15:01:30 +0000
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (4.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (5.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (38.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (81.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (20.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (23.2ms)
+Completed 200 OK in 224ms (Views: 215.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-23 15:01:53 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/homepage.html.erb within layouts/application (0.4ms)
+  Rendered shared/_nav.html.erb (2.1ms)
+Completed 200 OK in 107ms (Views: 101.6ms | ActiveRecord: 0.7ms)
+
+
