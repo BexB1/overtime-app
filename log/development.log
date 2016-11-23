@@ -10644,3 +10644,533 @@ Processing by Admin::UsersController#index as HTML
 Completed 200 OK in 183ms (Views: 180.1ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/admin/users" for 127.0.0.1 at 2016-11-23 10:00:25 +0000
+Processing by Admin::UsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (21.4ms)
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (12.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (14.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (152.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (220.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (37.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (7.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (96.7ms)
+Completed 200 OK in 472ms (Views: 438.7ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2016-11-23 10:00:29 +0000
+Processing by Admin::AdminUsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (3.5ms)
+  [1m[36mAdminUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('AdminUser') LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (8.9ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."type" IN ('AdminUser')[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (45.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (15.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (31.5ms)
+Completed 200 OK in 276ms (Views: 179.0ms | ActiveRecord: 92.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2016-11-23 10:00:31 +0000
+Processing by Admin::PostsController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (6.0ms)
+  [1m[36mPost Load (3.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (1.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (1.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (330.6ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (425.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (23.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (1.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (23.2ms)
+Completed 200 OK in 562ms (Views: 551.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2016-11-23 10:00:34 +0000
+Processing by Admin::UsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (3.7ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (3.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (25.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (63.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (20.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (39.7ms)
+Completed 200 OK in 212ms (Views: 204.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/admin/users/1" for 127.0.0.1 at 2016-11-23 10:00:36 +0000
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/show.html.erb within layouts/administrate/application
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts" WHERE "posts"."user_id" = $1 LIMIT $2) subquery_for_count[0m  [["user_id", 1], ["LIMIT", 5]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 5]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/belongs_to/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/text/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (68.7ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_show.html.erb (94.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_show.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/show.html.erb within layouts/administrate/application (166.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (25.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (26.7ms)
+Completed 200 OK in 313ms (Views: 305.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2016-11-23 10:00:42 +0000
+Processing by Admin::UsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (5.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (2.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (21.9ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (61.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (17.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (30.9ms)
+Completed 200 OK in 201ms (Views: 198.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2016-11-23 10:00:59 +0000
+Processing by Admin::AdminUsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (2.9ms)
+  [1m[36mAdminUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('AdminUser') LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (4.1ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."type" IN ('AdminUser')[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (41.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (28.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (26.9ms)
+Completed 200 OK in 186ms (Views: 184.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/admin_users/new" for 127.0.0.1 at 2016-11-23 10:01:00 +0000
+Processing by Admin::AdminUsersController#new as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/new.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (63.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (1.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_form.html.erb (92.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/new.html.erb within layouts/administrate/application (111.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (23.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (3.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (26.5ms)
+Completed 200 OK in 278ms (Views: 264.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/admin_users" for 127.0.0.1 at 2016-11-23 10:03:44 +0000
+Processing by Admin::AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ocDyvKR4qHsDIpvx7tXny3ArflkPyEsOSdl623Qsk6vVzXw/qFvqis6mUsKvr+9/HpSDowl7/kZ7l1boENRV5A==", "admin_user"=>{"email"=>"test@admin.com", "password"=>"[FILTERED]", "first_name"=>"Test", "last_name"=>"Admin", "type"=>"AdminUser"}, "commit"=>"Create Admin user"}
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (7.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@admin.com"], ["LIMIT", 1]]
+  [1m[35mSQL (15.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "first_name", "last_name", "type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test@admin.com"], ["encrypted_password", "$2a$11$V9ugdlh09cpFU.GmnkUqWeVNyDVlJi9nJ2DgnFO9uBdgO.aPDOHKO"], ["first_name", "Test"], ["last_name", "Admin"], ["type", "AdminUser"], ["created_at", 2016-11-23 10:03:44 UTC], ["updated_at", 2016-11-23 10:03:44 UTC]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/admin_users/2
+Completed 302 Found in 309ms (ActiveRecord: 29.9ms)
+
+
+Started GET "/admin/admin_users/2" for 127.0.0.1 at 2016-11-23 10:03:45 +0000
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('AdminUser') AND "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/show.html.erb within layouts/administrate/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts" WHERE "posts"."user_id" = $1 LIMIT $2) subquery_for_count[0m  [["user_id", 2], ["LIMIT", 5]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_show.html.erb (4.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_show.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/show.html.erb within layouts/administrate/application (55.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (17.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (22.0ms)
+Completed 200 OK in 186ms (Views: 175.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2016-11-23 10:03:50 +0000
+Processing by Admin::UsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (3.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (2.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (2.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (36.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (74.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (21.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (3.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (26.7ms)
+Completed 200 OK in 223ms (Views: 218.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/users/new" for 127.0.0.1 at 2016-11-23 10:05:18 +0000
+Processing by Admin::UsersController#new as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/new.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (1.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_form.html.erb (20.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/new.html.erb within layouts/administrate/application (35.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (15.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (4.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (20.5ms)
+Completed 200 OK in 168ms (Views: 156.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/users/new" for 127.0.0.1 at 2016-11-23 10:06:06 +0000
+Processing by Admin::UsersController#new as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/new.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_form.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_form.html.erb (16.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/new.html.erb within layouts/administrate/application (33.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (27.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (4.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (26.1ms)
+Completed 200 OK in 186ms (Views: 175.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/users" for 127.0.0.1 at 2016-11-23 10:06:17 +0000
+Processing by Admin::UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2lfrdho+pzC/twQvDAD8+eNC9cLVmhxFYAW19wCtRJOuWmX1Fh3lwXIzzRxNevRNjf0IONMpqQ1SS5nEZFWC3A==", "user"=>{"email"=>"test@user.com", "password"=>"[FILTERED]", "first_name"=>"Test", "last_name"=>"User"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@user.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "test@user.com"], ["encrypted_password", "$2a$11$mX2aHNOoRZbNnt6sBTXQG.zd0YXBsPEvK8.iU6HafySRz2vZ5I6nS"], ["first_name", "Test"], ["last_name", "User"], ["created_at", 2016-11-23 10:06:17 UTC], ["updated_at", 2016-11-23 10:06:17 UTC]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users/3
+Completed 302 Found in 176ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/admin/users/3" for 127.0.0.1 at 2016-11-23 10:06:17 +0000
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/show.html.erb within layouts/administrate/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "posts" WHERE "posts"."user_id" = $1 LIMIT $2) subquery_for_count[0m  [["user_id", 3], ["LIMIT", 5]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_show.html.erb (7.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_show.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/date_time/_show.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_show.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/show.html.erb within layouts/administrate/application (60.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (18.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (3.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (22.3ms)
+Completed 200 OK in 198ms (Views: 189.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2016-11-23 10:06:20 +0000
+Processing by Admin::UsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (3.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (2.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.4ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 3]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (80.5ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (123.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (28.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (25.8ms)
+Completed 200 OK in 294ms (Views: 273.0ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2016-11-23 10:08:21 +0000
+Processing by Admin::UsersController#index as HTML
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (4.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 3]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (68.7ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (104.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (14.7ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (21.1ms)
+Completed 200 OK in 220ms (Views: 214.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/users?direction=asc&order=type" for 127.0.0.1 at 2016-11-23 10:08:30 +0000
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"direction"=>"asc", "order"=>"type"}
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (4.0ms)
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."type" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 3]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (53.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (91.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (14.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (2.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (26.6ms)
+Completed 200 OK in 218ms (Views: 211.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/admin/users?direction=desc&order=type" for 127.0.0.1 at 2016-11-23 10:08:32 +0000
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"direction"=>"desc", "order"=>"type"}
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_search.html.erb (3.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."type" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (1.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 3]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/has_many/_index.html.erb (1.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/number/_index.html.erb (0.4ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.1ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/fields/string/_index.html.erb (0.0ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_collection.html.erb (61.1ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/index.html.erb within layouts/administrate/application (112.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_stylesheet.html.erb (18.5ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_sidebar.html.erb (1.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_flashes.html.erb (0.6ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/administrate-0.3.0/app/views/administrate/application/_javascript.html.erb (19.1ms)
+Completed 200 OK in 257ms (Views: 253.2ms | ActiveRecord: 2.8ms)
+
+
