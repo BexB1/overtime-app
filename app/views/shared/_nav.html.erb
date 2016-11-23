@@ -12,15 +12,16 @@
   <li class="<%= active?(new_post_path) %>">
     <%= link_to "New Entry", new_post_path, id: 'new_post_from_nav' %>
   </li>
-  <li class="Account user-edit-form">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
+  <li class="dropdown pull-right">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Account<strong class="caret"></strong></a>
   <ul class="dropdown-menu">
-  <li>
-    <%= link_to "TODO: Admin Dashboard", root_path %>
-  </li>
-  <li class="divider">
-  </li>
-  <li>
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-  </li>
+    <li>
+      <%= link_to "TODO: Admin Dashboard", root_path %>
+    </li>
+    <li class="divider">
+    </li>
+    <li>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    </li>
+  </ul>
 </ul>
