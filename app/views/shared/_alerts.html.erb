@@ -1,0 +1,7 @@
+<% if flash[:alert] %>
+  <%= js add_gritter(flash[:alert], title: "TimeTracker Alert", sticky: false, image: :notice, time: 5000) %>    
+<% elsif flash[:error] %>
+  <%= js add_gritter(flash[:error], title: "TimeTracker Error", sticky: false, image: :notice, time: 5000) %>    
+<% else %>
+  <%= js add_gritter(flash[:notice], title: "TimeTracker Notification", sticky: false, image: :notice, time: 5000) %>
+<% end %>
