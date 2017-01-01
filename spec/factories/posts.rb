@@ -11,5 +11,12 @@ FactoryGirl.define do
     rationale "Some more content"
     status "submitted"
     user
+  end  
+
+  factory :post_from_another_user, class: "Post" do
+    date Date.yesterday
+    rationale "Some more content"
+    status "submitted"
+    non_authorized_user
   end
 end
