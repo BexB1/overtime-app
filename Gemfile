@@ -33,3 +33,4 @@ gem 'administrate'
 gem 'bourbon'
 gem 'pundit'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
