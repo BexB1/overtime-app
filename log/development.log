@@ -25924,3 +25924,113 @@ Processing by AuditLogsController#index as JS
 Completed 200 OK in 227ms (Views: 209.8ms | ActiveRecord: 2.0ms)
 
 
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/bex/Desktop/overtime-app/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2017-02-02 14:19:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_admin.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (5.3ms)
+  Rendered shared/_audit_log_tab.html.erb (1.0ms)
+  Rendered shared/_nav.html.erb (16.3ms)
+  Rendered shared/_alerts.html.erb (4.2ms)
+Completed 200 OK in 1274ms (Views: 1209.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-02-02 14:19:44 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.0ms)
+  Rendered shared/_audit_log_tab.html.erb (0.6ms)
+  Rendered shared/_nav.html.erb (3.3ms)
+  Rendered shared/_alerts.html.erb (3.5ms)
+Completed 200 OK in 143ms (Views: 120.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 14:19:45 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_admin.html.erb (1.4ms)
+  Rendered static/homepage.html.erb within layouts/application (4.0ms)
+  Rendered shared/_audit_log_tab.html.erb (0.8ms)
+  Rendered shared/_nav.html.erb (4.7ms)
+  Rendered shared/_alerts.html.erb (3.5ms)
+Completed 200 OK in 131ms (Views: 125.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 14:19:52 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_admin.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (1.9ms)
+  Rendered shared/_audit_log_tab.html.erb (0.8ms)
+  Rendered shared/_nav.html.erb (4.7ms)
+  Rendered shared/_alerts.html.erb (3.4ms)
+Completed 200 OK in 111ms (Views: 108.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-02 14:19:55 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JqOI+OoMELal1YUVxlRR8c/+K4zfvsF0qAru+jd8cVuWuyPxMysik1IXmLm1cb/cUiver6zwjlrOUcJUSA41sw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 14:19:55 +0000
+Processing by StaticController#homepage as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-02 14:19:55 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.0ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+  Rendered shared/_alerts.html.erb (3.7ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-02 14:20:01 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mpb8VjtCvj94Uujp2uhr2MdkgC3CiojK5haLeKEjT7cc3EXvqif1AyI9KVkT41heaN0pO6RqDC/FCfO8xj5Nfg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (16.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", 2017-02-02 14:20:01 UTC], ["sign_in_count", 2], ["updated_at", 2017-02-02 14:20:01 UTC], ["id", 2]]
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 217ms (ActiveRecord: 29.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 14:20:01 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (2.3ms)
+  Rendered shared/_nav.html.erb (2.0ms)
+  Rendered shared/_alerts.html.erb (3.9ms)
+Completed 200 OK in 116ms (Views: 112.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 14:23:48 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (2.3ms)
+  Rendered shared/_nav.html.erb (9.1ms)
+  Rendered shared/_alerts.html.erb (2.4ms)
+Completed 200 OK in 174ms (Views: 150.5ms | ActiveRecord: 5.5ms)
+
+
