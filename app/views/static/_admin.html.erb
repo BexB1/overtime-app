@@ -1,12 +1,15 @@
 <div class="container-fluid">
   <div class="pending-homepage row">
-  <h2>Items Pending Your Approval</h2>
+    <span class="heading-text">Items Pending Your Approval</span> <span><%= link_to 'View All Items', audit_logs_path, class: 'btn btn-primary pull-right' %></span>
+    <hr />
     <%= render partial: 'pending_approval', locals: { pending_approvals: @pending_approvals } %>
   </div>
 
-  <div class="pending-homepage">
-    <div class="">
-      
-    </div>
+  <div class="pending-homepage row">
+    <span class="heading-text">Confirmation Log</span>
+    <span><%= link_to 'View All Items', audit_logs_path, class: 'btn btn-primary pull-right' %></span>
+    <hr />
+
+    <%= render partial: 'confirmation_log', locals: { recent_audit_items: @recent_audit_items } %>
   </div>
 </div>
