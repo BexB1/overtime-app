@@ -29982,3 +29982,641 @@ DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/D
 Completed 200 OK in 2680ms (Views: 2674.1ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:02:09 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAuditLog Load (0.5ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" ORDER BY "audit_logs"."id" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."status" = $1[0m  [["status", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered static/_pending_approval.html.erb (55.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered static/_confirmation_log.html.erb (28.4ms)
+  Rendered static/_admin.html.erb (90.8ms)
+  Rendered static/homepage.html.erb within layouts/application (94.1ms)
+  Rendered shared/_audit_log_tab.html.erb (1.2ms)
+  Rendered shared/_nav.html.erb (10.0ms)
+  Rendered shared/_alerts.html.erb (3.8ms)
+Completed 200 OK in 467ms (Views: 343.7ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/audit_logs" for 127.0.0.1 at 2017-02-03 12:07:57 +0000
+Processing by AuditLogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering audit_logs/index.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.4ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of audit_logs/_audit_log.html.erb [10 times] (17.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "audit_logs"[0m
+  Rendered audit_logs/index.html.erb within layouts/application (60.6ms)
+  Rendered shared/_audit_log_tab.html.erb (1.0ms)
+  Rendered shared/_nav.html.erb (4.5ms)
+  Rendered shared/_alerts.html.erb (2.5ms)
+Completed 200 OK in 251ms (Views: 186.8ms | ActiveRecord: 10.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-03 12:08:00 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xcwibloeCsRIJXlfrflCY97dYJl+GK3hMpmxm747gHiJPcMZAQJCAo54AyLrpP7tDjJF2AIl/wlI9G4eTypc2w=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:08:00 +0000
+Processing by StaticController#homepage as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-03 12:08:00 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.4ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+  Rendered shared/_alerts.html.erb (3.0ms)
+Completed 200 OK in 140ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-02-03 12:08:06 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xsz/kIPly1F0SlKe9AaPgkkCMiVr/IEkJjxhLrWpUXElDsvnOztW5dNIisJRC0S/m/IsDLwYsdo63ie96qtkUg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-02-03 12:08:06 UTC], ["last_sign_in_at", 2017-02-02 14:20:01 UTC], ["sign_in_count", 3], ["updated_at", 2017-02-03 12:08:06 UTC], ["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 170ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:08:06 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (undefined local variable or method `admin_types' for #<StaticController:0x007fbf4f0c5768>):
+  
+app/controllers/static_controller.rb:3:in `homepage'
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (178.4ms)
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:09:44 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 4.6ms)
+
+
+  
+NameError (undefined local variable or method `admin_types' for #<StaticController:0x007fbf50cd17e0>):
+  
+app/controllers/static_controller.rb:3:in `homepage'
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (164.7ms)
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:11:35 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuditLog Load (0.7ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" ORDER BY "audit_logs"."id" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (2.5ms)
+  Rendered shared/_nav.html.erb (5.3ms)
+  Rendered shared/_alerts.html.erb (3.4ms)
+Completed 200 OK in 174ms (Views: 121.8ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-02-03 12:11:38 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 LIMIT $2 OFFSET $3[0m  [["user_id", 2], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of posts/_post.html.erb [10 times] (50.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered posts/index.html.erb within layouts/application (79.0ms)
+  Rendered shared/_nav.html.erb (1.9ms)
+  Rendered shared/_alerts.html.erb (3.4ms)
+Completed 200 OK in 182ms (Views: 167.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:11:39 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuditLog Load (0.4ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" ORDER BY "audit_logs"."id" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.5ms)
+  Rendered static/homepage.html.erb within layouts/application (12.3ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+  Rendered shared/_alerts.html.erb (8.2ms)
+Completed 200 OK in 204ms (Views: 198.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:11:48 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.5ms)
+  Rendered static/homepage.html.erb within layouts/application (3.6ms)
+  Rendered shared/_nav.html.erb (8.9ms)
+  Rendered shared/_alerts.html.erb (1.6ms)
+Completed 200 OK in 126ms (Views: 106.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:12:46 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (1.9ms)
+  Rendered shared/_nav.html.erb (2.0ms)
+  Rendered shared/_alerts.html.erb (3.1ms)
+Completed 200 OK in 89ms (Views: 85.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:13:03 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.2ms)
+  Rendered static/homepage.html.erb within layouts/application (1.8ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+  Rendered shared/_alerts.html.erb (1.8ms)
+Completed 200 OK in 104ms (Views: 100.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:13:19 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.2ms)
+  Rendered static/homepage.html.erb within layouts/application (1.8ms)
+  Rendered shared/_nav.html.erb (2.2ms)
+  Rendered shared/_alerts.html.erb (3.2ms)
+Completed 200 OK in 91ms (Views: 87.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:18:55 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.7ms)
+  Rendered static/homepage.html.erb within layouts/application (8.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70230058894600 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70230058894600 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70230058894600 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70230058894600 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70230058894600 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70230058894600 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+  Rendered shared/_nav.html.erb (1.8ms)
+  Rendered shared/_alerts.html.erb (2.9ms)
+Completed 200 OK in 3126ms (Views: 3100.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:19:11 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.8ms)
+  Rendered static/homepage.html.erb within layouts/application (3.0ms)
+  Rendered shared/_nav.html.erb (2.4ms)
+  Rendered shared/_alerts.html.erb (4.0ms)
+Completed 200 OK in 129ms (Views: 124.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:20:41 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.4ms)
+  Rendered static/homepage.html.erb within layouts/application (2.5ms)
+  Rendered shared/_nav.html.erb (2.0ms)
+  Rendered shared/_alerts.html.erb (4.1ms)
+Completed 200 OK in 112ms (Views: 107.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:20:51 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (1.9ms)
+  Rendered shared/_nav.html.erb (2.6ms)
+  Rendered shared/_alerts.html.erb (3.7ms)
+Completed 200 OK in 118ms (Views: 114.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:21:08 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.4ms)
+  Rendered static/homepage.html.erb within layouts/application (2.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229841869060 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229841869060 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229841869060 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229841869060 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229841869060 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229841869060 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+  Rendered shared/_nav.html.erb (1.3ms)
+  Rendered shared/_alerts.html.erb (2.4ms)
+Completed 200 OK in 3139ms (Views: 3135.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:21:30 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (2.2ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+  Rendered shared/_alerts.html.erb (3.4ms)
+Completed 200 OK in 109ms (Views: 105.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:21:41 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.4ms)
+  Rendered static/homepage.html.erb within layouts/application (2.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229847401780 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229847401780 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229847401780 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229847401780 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229847401780 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229847401780 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+  Rendered shared/_nav.html.erb (1.9ms)
+  Rendered shared/_alerts.html.erb (4.0ms)
+Completed 200 OK in 2758ms (Views: 2754.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:21:52 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.3ms)
+  Rendered static/homepage.html.erb within layouts/application (2.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229831354820 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229831354820 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229831354820 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.css.scss to /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/gritter-1.2.0/app/assets/stylesheets/gritter.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229831354820 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/admin_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229831354820 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.css.scss to /Users/bex/Desktop/overtime-app/app/assets/stylesheets/employee_homepage.scss. (called from _app_views_layouts_application_html_erb__396714613057427933_70229831354820 at /Users/bex/Desktop/overtime-app/app/views/layouts/application.html.erb:7)
+  Rendered shared/_nav.html.erb (1.2ms)
+  Rendered shared/_alerts.html.erb (2.0ms)
+Completed 200 OK in 2715ms (Views: 2711.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:22:27 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.4ms)
+  Rendered static/homepage.html.erb within layouts/application (2.2ms)
+  Rendered shared/_nav.html.erb (2.8ms)
+  Rendered shared/_alerts.html.erb (4.6ms)
+Completed 200 OK in 141ms (Views: 137.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:22:49 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  Rendered static/_employee.html.erb (0.4ms)
+  Rendered static/homepage.html.erb within layouts/application (2.6ms)
+  Rendered shared/_nav.html.erb (1.9ms)
+  Rendered shared/_alerts.html.erb (2.5ms)
+Completed 200 OK in 114ms (Views: 110.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 12:27:03 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (1.5ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_employee.html.erb (18.4ms)
+  Rendered static/homepage.html.erb within layouts/application (20.2ms)
+  Rendered shared/_nav.html.erb (5.5ms)
+  Rendered shared/_alerts.html.erb (3.1ms)
+Completed 200 OK in 189ms (Views: 138.7ms | ActiveRecord: 13.0ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/bex/Desktop/overtime-app/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2017-02-03 14:53:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (1.4ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_employee.html.erb (23.9ms)
+  Rendered static/homepage.html.erb within layouts/application (27.7ms)
+  Rendered shared/_nav.html.erb (3.8ms)
+  Rendered shared/_alerts.html.erb (4.2ms)
+Completed 200 OK in 1114ms (Views: 1030.9ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:02:09 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.6ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (6.5ms)
+  Rendered static/_employee.html.erb (8.3ms)
+  Rendered static/homepage.html.erb within layouts/application (10.0ms)
+  Rendered shared/_nav.html.erb (2.5ms)
+  Rendered shared/_alerts.html.erb (3.2ms)
+Completed 200 OK in 118ms (Views: 111.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:02:36 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.5ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (5.9ms)
+  Rendered static/_employee.html.erb (7.3ms)
+  Rendered static/homepage.html.erb within layouts/application (8.7ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+  Rendered shared/_alerts.html.erb (2.7ms)
+Completed 200 OK in 99ms (Views: 94.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:04:38 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.8ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (16.5ms)
+  Rendered static/_employee.html.erb (18.2ms)
+  Rendered static/homepage.html.erb within layouts/application (19.9ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+  Rendered shared/_alerts.html.erb (3.3ms)
+Completed 200 OK in 109ms (Views: 103.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:05:04 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.6ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (8.8ms)
+  Rendered static/_employee.html.erb (10.3ms)
+  Rendered static/homepage.html.erb within layouts/application (11.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+  Rendered shared/_alerts.html.erb (2.7ms)
+Completed 200 OK in 107ms (Views: 101.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:05:20 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.6ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (8.7ms)
+  Rendered static/_employee.html.erb (10.1ms)
+  Rendered static/homepage.html.erb within layouts/application (11.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+  Rendered shared/_alerts.html.erb (3.8ms)
+Completed 200 OK in 98ms (Views: 91.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:06:52 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.5ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (9.5ms)
+  Rendered static/_employee.html.erb (11.2ms)
+  Rendered static/homepage.html.erb within layouts/application (14.1ms)
+  Rendered shared/_nav.html.erb (2.1ms)
+  Rendered shared/_alerts.html.erb (6.1ms)
+Completed 200 OK in 131ms (Views: 125.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:07:08 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.6ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (10.9ms)
+  Rendered static/_employee.html.erb (12.4ms)
+  Rendered static/homepage.html.erb within layouts/application (14.1ms)
+  Rendered shared/_nav.html.erb (2.7ms)
+  Rendered shared/_alerts.html.erb (3.8ms)
+Completed 200 OK in 140ms (Views: 132.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:30:58 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.6ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (9.8ms)
+  Rendered static/_employee.html.erb (11.4ms)
+  Rendered static/homepage.html.erb within layouts/application (13.1ms)
+  Rendered shared/_nav.html.erb (1.9ms)
+  Rendered shared/_alerts.html.erb (3.1ms)
+Completed 200 OK in 134ms (Views: 128.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 15:32:40 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (1.4ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (15.5ms)
+  Rendered static/_employee.html.erb (18.2ms)
+  Rendered static/homepage.html.erb within layouts/application (22.2ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+  Rendered shared/_alerts.html.erb (5.0ms)
+Completed 200 OK in 138ms (Views: 129.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 16:25:19 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.5ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (19.7ms)
+  Rendered static/_employee.html.erb (21.3ms)
+  Rendered static/homepage.html.erb within layouts/application (23.4ms)
+  Rendered shared/_nav.html.erb (4.8ms)
+  Rendered shared/_alerts.html.erb (1.9ms)
+Completed 200 OK in 162ms (Views: 136.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/audit_logs/1/confirm" for 127.0.0.1 at 2017-02-03 16:25:22 +0000
+Processing by AuditLogsController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuditLog Load (0.4ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `confirmed!' for nil:NilClass):
+  
+app/controllers/audit_logs_controller.rb:10:in `confirm'
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.2ms)
+Started GET "/audit_logs/1/confirm" for 127.0.0.1 at 2017-02-03 16:26:07 +0000
+Processing by AuditLogsController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuditLog Load (0.2ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `confirmed!' for nil:NilClass):
+  
+app/controllers/audit_logs_controller.rb:10:in `confirm'
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendering /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /Users/bex/.rbenv/versions/2.2.5/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.3ms)
+Started GET "/" for 127.0.0.1 at 2017-02-03 16:26:39 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.6ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (20.3ms)
+  Rendered static/_employee.html.erb (23.5ms)
+  Rendered static/homepage.html.erb within layouts/application (26.2ms)
+  Rendered shared/_nav.html.erb (4.5ms)
+  Rendered shared/_alerts.html.erb (3.2ms)
+Completed 200 OK in 181ms (Views: 153.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/audit_logs/1/confirm" for 127.0.0.1 at 2017-02-03 16:26:41 +0000
+Processing by AuditLogsController#confirm as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuditLog Load (0.8ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (8.1ms)[0m  [1m[33mUPDATE "audit_logs" SET "status" = $1, "updated_at" = $2 WHERE "audit_logs"."id" = $3[0m  [["status", 1], ["updated_at", 2017-02-03 16:26:41 UTC], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 42ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 16:26:42 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.8ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (27.4ms)
+  Rendered static/_employee.html.erb (31.1ms)
+  Rendered static/homepage.html.erb within layouts/application (34.8ms)
+  Rendered shared/_nav.html.erb (2.3ms)
+  Rendered shared/_alerts.html.erb (3.7ms)
+Completed 200 OK in 182ms (Views: 154.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/audit_logs/2/confirm" for 127.0.0.1 at 2017-02-03 17:05:07 +0000
+Processing by AuditLogsController#confirm as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAuditLog Load (1.6ms)[0m  [1m[34mSELECT  "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (3.4ms)[0m  [1m[33mUPDATE "audit_logs" SET "status" = $1, "updated_at" = $2 WHERE "audit_logs"."id" = $3[0m  [["status", 1], ["updated_at", 2017-02-03 17:05:07 UTC], ["id", 2]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 17:05:07 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (1.0ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered static/_pending_audit_confirmations.html.erb (19.9ms)
+  Rendered static/_employee.html.erb (23.4ms)
+  Rendered static/homepage.html.erb within layouts/application (29.0ms)
+  Rendered shared/_nav.html.erb (1.7ms)
+  Rendered shared/_alerts.html.erb (3.1ms)
+Completed 200 OK in 307ms (Views: 298.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-03 17:12:30 +0000
+Processing by StaticController#homepage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering static/homepage.html.erb within layouts/application
+  [1m[36mAuditLog Load (0.5ms)[0m  [1m[34mSELECT "audit_logs".* FROM "audit_logs" WHERE "audit_logs"."user_id" = $1 AND "audit_logs"."status" = $2[0m  [["user_id", 2], ["status", 0]]
+  Rendered static/_pending_audit_confirmations.html.erb (21.9ms)
+  Rendered static/_employee.html.erb (23.9ms)
+  Rendered static/homepage.html.erb within layouts/application (26.3ms)
+  Rendered shared/_nav.html.erb (4.7ms)
+  Rendered shared/_alerts.html.erb (4.2ms)
+Completed 200 OK in 183ms (Views: 154.2ms | ActiveRecord: 1.0ms)
+
+

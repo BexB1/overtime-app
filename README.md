@@ -1,6 +1,5 @@
 # Overtime App
 
-Features:
+Still a WIP
 
-- Built using BDD
-- Single-table inheritance for Admin User accounts.
+An overtime-logging app
